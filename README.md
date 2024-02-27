@@ -12,6 +12,7 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 3. [lazyvim.plugins.extras.lang.json](https://www.lazyvim.org/extras/lang/json) Json支持
     > 安装这个插件需要`npm`的支持
 4. [lazyvim.plugins.extras.lang.markdown](https://www.lazyvim.org/extras/lang/markdown) Markdown支持
+5. [lazyvim.plugins.extras.lang.yaml](https://www.lazyvim.org/extras/lang/yaml) YAML支持
 
 # nvim plugins
 

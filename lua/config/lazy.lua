@@ -19,6 +19,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.json" },
     -- markdown support
     { import = "lazyvim.plugins.extras.lang.markdown" },
+    -- YAML support
+    { import = "lazyvim.plugins.extras.lang.yaml" },
     -- { import = "lazyvim.plugins.extras.lang.typescript" },
     -- { import = "lazyvim.plugins.extras.lang.json" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
