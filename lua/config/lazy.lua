@@ -14,7 +14,7 @@ require("lazy").setup({
     -- golang support
     { import = "lazyvim.plugins.extras.lang.go" },
     -- outline support
-    { import = "lazyvim.plugins.extras.editor.symbols-outline" },
+    { import = "lazyvim.plugins.extras.editor.outline" },
     -- json support
     { import = "lazyvim.plugins.extras.lang.json" },
     -- markdown support

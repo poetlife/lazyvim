@@ -8,7 +8,8 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 > [all available lazyvim plugins](https://www.lazyvim.org/plugins)
 
 1. [lazyvim.plugins.extras.lang.go](https://www.lazyvim.org/extras/lang/go) Go语言的LSP
-2. [lazyvim.plugins.extras.editor.symbols-outline](https://www.lazyvim.org/extras/editor/symbols-outline) 大纲支持
+2. [lazyvim.plugins.extras.editor.outline](https://www.lazyvim.org/extras/editor/outline) 大纲支持
+    > 从symbols-outline切换到outline插件，详见：https://github.com/LazyVim/LazyVim/pull/2535
 3. [lazyvim.plugins.extras.lang.json](https://www.lazyvim.org/extras/lang/json) Json支持
     > 安装这个插件需要`npm`的支持
 4. [lazyvim.plugins.extras.lang.markdown](https://www.lazyvim.org/extras/lang/markdown) Markdown支持
