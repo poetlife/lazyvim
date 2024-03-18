@@ -14,3 +14,7 @@ vim.g.clipboard = {
   copy = { ["+"] = copy, ["*"] = copy },
   paste = { ["+"] = paste, ["*"] = paste },
 }
+
+-- 设置拷贝默认使用的寄存器为 *
+-- 可以通过 :echo &clipboard 来查看使用的寄存器
+vim.o.clipboard = "unnamed"
