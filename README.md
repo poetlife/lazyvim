@@ -18,3 +18,7 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 # nvim plugins
 
 1. [nvim-osc52](https://github.com/ojroques/nvim-osc52) add support for neovim clipboard. 安装好了之后，可以通过ssh复制/粘贴，在neovim 10.0之后被官方支持。
+
+2. [git-blame](https://github.com/f-person/git-blame.nvim) Git Blame plugin for Neovim written in Lua
+
+    可以使用`ToggleBlame`命令切换出来Git Blame栏。
