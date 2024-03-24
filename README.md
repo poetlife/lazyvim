@@ -3,6 +3,39 @@
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
 
+## Installation
+
+```bash
+git clone https://github.com/poetlife/lazyvim ~/.config/nvim
+```
+
+then `nvim` start lazyvim
+
+### ubuntu install stable nvim from source
+
+> https://github.com/neovim/neovim/blob/master/BUILD.md
+
+- install build essential
+```bash
+sudo apt-get install ninja-build gettext cmake unzip curl build-essential
+```
+
+- Get source code
+```bash
+git clone https://github.com/neovim/neovim
+# checkout stable branch
+cd neovim
+git checkout stable
+```
+
+- compile & install
+```bash
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+# install
+sudo make install
+```
+
+
 # lazyvim plugins
 
 > [all available lazyvim plugins](https://www.lazyvim.org/plugins)
