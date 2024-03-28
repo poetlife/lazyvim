@@ -55,3 +55,11 @@ sudo make install
 2. [git-blame](https://github.com/f-person/git-blame.nvim) Git Blame plugin for Neovim written in Lua
 
     可以使用`ToggleBlame`命令切换出来Git Blame栏。
+
+# keymaps
+
+自定义快捷键如下表所示：
+
+| 快捷键 | 作用 | 备注 |
+| ------ | ----- | ----- |
+| `<leader>gb` | ToggleBlame 开启/关闭显示Git Blame的窗口 | 功能由[git-blame](https://github.com/f-person/git-blame.nvim)提供 |
