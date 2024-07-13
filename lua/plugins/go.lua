@@ -28,4 +28,21 @@ return {
       }
     end,
   },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        gopls = {
+          settings = {
+            gopls = {
+              analyses = {
+                -- 关闭fieldalignment分析
+                fieldalignment = false,
+              },
+            },
+          },
+        },
+      },
+    },
+  },
 }
