@@ -35,6 +35,7 @@ return {
         gopls = {
           settings = {
             gopls = {
+              buildFlags = { "-tags=wireinject" },
               analyses = {
                 -- 关闭fieldalignment分析
                 fieldalignment = false,
