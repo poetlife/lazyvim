@@ -40,6 +40,7 @@ return {
                 -- 关闭fieldalignment分析
                 fieldalignment = false,
               },
+              usePlaceholders = false, -- 禁用参数填充
             },
           },
         },
