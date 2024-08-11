@@ -40,6 +40,12 @@ return {
                 -- 关闭fieldalignment分析
                 fieldalignment = false,
               },
+              -- inlay hints, can be setted by <space>uh
+              hints = {
+                -- 提示函数参数的类型
+                functionTypeParameters = true,
+                parameterNames = true,
+              },
               usePlaceholders = false, -- 禁用参数填充
             },
           },
