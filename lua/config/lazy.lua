@@ -22,6 +22,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.markdown" },
     -- YAML support
     { import = "lazyvim.plugins.extras.lang.yaml" },
+    -- rust support
+    { import = "lazyvim.plugins.extras.lang.rust" },
     -- surround support
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
     -- { import = "lazyvim.plugins.extras.lang.typescript" },
