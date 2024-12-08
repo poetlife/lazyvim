@@ -29,6 +29,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
     -- python support
     { import = "lazyvim.plugins.extras.lang.python" },
+    -- clangd support
+    { import = "lazyvim.plugins.extras.lang.clangd" },
     -- { import = "lazyvim.plugins.extras.lang.typescript" },
     -- { import = "lazyvim.plugins.extras.lang.json" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
