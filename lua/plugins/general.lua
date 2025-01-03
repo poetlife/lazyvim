@@ -23,4 +23,13 @@ return {
       },
     },
   },
+  -- 配置lspconfig
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      codelens = {
+        enabled = true,
+      },
+    },
+  },
 }
