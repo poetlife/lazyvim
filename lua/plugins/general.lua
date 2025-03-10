@@ -32,4 +32,10 @@ return {
       },
     },
   },
+  -- 配置 neo-tree
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    lazy = false, -- https://github.com/nvim-neo-tree/neo-tree.nvim/issues/1699 目前惰加载会有点问题，先这样处理
+    opts = {},
+  },
 }
