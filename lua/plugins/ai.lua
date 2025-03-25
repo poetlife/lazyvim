@@ -14,7 +14,8 @@ return {
           -- 这里需要设置对应的环境变量说明对应的key
           api_key_name = "DEEPSEEK_API_KEY",
           endpoint = "https://api.lkeap.cloud.tencent.com/v1",
-          model = "deepseek-r1",
+          model = "deepseek-v3",
+          disable_tools = true, -- 腾讯云API不支持tools，设置了会卡住不回复
         },
       },
     },
