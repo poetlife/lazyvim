@@ -15,7 +15,7 @@ return {
           api_key_name = "DEEPSEEK_API_KEY",
           endpoint = "https://api.lkeap.cloud.tencent.com/v1",
           model = "deepseek-v3",
-          disable_tools = true, -- 腾讯云API不支持tools，设置了会卡住不回复
+          disable_tools = false, -- 腾讯云 API 已经支持了函数调用
         },
       },
     },
