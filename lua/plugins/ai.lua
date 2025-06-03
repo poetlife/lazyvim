@@ -8,7 +8,7 @@ return {
       -- add any opts here
       -- for example
       provider = "deepseek",
-      vendors = {
+      providers = {
         deepseek = {
           __inherited_from = "openai",
           -- 这里需要设置对应的环境变量说明对应的key
