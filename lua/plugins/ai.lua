@@ -6,8 +6,7 @@ return {
     version = false, -- Set this to "*" to always pull the latest release version, or set it to false to update to the latest code changes.
     opts = {
       -- add any opts here
-      -- for example
-      provider = "deepseek",
+      provider = "deepseek", -- 设置默认使用的provider
       providers = {
         deepseek = {
           __inherited_from = "openai",
@@ -15,6 +14,14 @@ return {
           api_key_name = "DEEPSEEK_API_KEY",
           endpoint = "https://api.lkeap.cloud.tencent.com/v1",
           model = "deepseek-v3",
+          disable_tools = false, -- 腾讯云 API 已经支持了函数调用
+        },
+        deepseek_thinking = {
+          __inherited_from = "openai",
+          -- 这里需要设置对应的环境变量说明对应的key
+          api_key_name = "DEEPSEEK_API_KEY",
+          endpoint = "https://api.lkeap.cloud.tencent.com/v1",
+          model = "deepseek-r1",
           disable_tools = false, -- 腾讯云 API 已经支持了函数调用
         },
       },
