@@ -35,4 +35,35 @@ return {
       },
     },
   },
+  -- 使用comfort + nvim-lint
+  {
+    "mfussenegger/nvim-lint",
+    dependencies = {
+      {
+        "mason-org/mason.nvim",
+        opts = { ensure_installed = { "golangci-lint" } },
+      },
+    },
+    -- dev = true,
+    -- dir = "/data1/code/sources/lua/nvim-lint",
+    opts = {
+      linters_by_ft = {
+        go = { "golangcilint" },
+      },
+      linters = {
+        golangcilint = {
+          -- ignore_exitcode = true,
+          stream = "both",
+        },
+      },
+    },
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        go = { "goimports", "gofumpt" },
+      },
+    },
+  },
 }
