@@ -32,6 +32,30 @@ return {
       },
     },
   },
+  -- 配置 fzf-lua
+  {
+    "ibhagwan/fzf-lua",
+    keys = function(_, keys)
+      keys = keys or {}
+      keys[#keys + 1] = {
+        "<leader>se",
+        function()
+          require("fzf-lua").grep_curbuf({
+            search = [[^\s*export\b]],
+            no_esc = true,
+          })
+        end,
+        ft = {
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact",
+        },
+        desc = "Goto Exported Symbol",
+      }
+      return keys
+    end,
+  },
   -- 配置 neo-tree
   {
     "nvim-neo-tree/neo-tree.nvim",
