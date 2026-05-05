@@ -56,6 +56,50 @@ return {
       return keys
     end,
   },
+  -- 扩展 kind_filter，让 <leader>ss 显示更多符号类型
+  -- LSP SymbolKind 完整列表（vim.lsp.protocol.SymbolKind）：
+  --  1=File, 2=Module, 3=Namespace, 4=Package, 5=Class, 6=Method,
+  --  7=Property, 8=Field, 9=Constructor, 10=Enum, 11=Interface,
+  --  12=Function, 13=Variable, 14=Constant, 15=String, 16=Number,
+  --  17=Boolean, 18=Array, 19=Object, 20=Key, 21=Null,
+  --  22=EnumMember, 23=Struct, 24=Event, 25=Operator, 26=TypeParameter
+  -- 注：TypeScript 的 type alias 在 LSP 中被报告为 Variable
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      kind_filter = {
+        default = {
+          "Class",
+          "Constructor",
+          "Enum",
+          "Field",
+          "Function",
+          "Interface",
+          "Method",
+          "Module",
+          "Namespace",
+          "Package",
+          "Property",
+          "Struct",
+          "Trait",
+          "Variable", -- 包含 typescript type alias
+          -- "Constant",
+          -- "File",
+          -- "String",
+          -- "Number",
+          -- "Boolean",
+          -- "Array",
+          -- "Object",
+          -- "Key",
+          -- "Null",
+          -- "EnumMember",
+          -- "Event",
+          -- "Operator",
+          -- "TypeParameter",
+        },
+      },
+    },
+  },
   -- 配置 neo-tree
   {
     "nvim-neo-tree/neo-tree.nvim",
