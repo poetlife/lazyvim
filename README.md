@@ -1,5 +1,10 @@
 # Repository Guidelines
 
+## Announcement
+This configuration now requires Neovim `v0.12.x` or newer. Versions earlier than `v0.12.0` are no longer supported.
+
+`nvim-treesitter` is still required for this config at the moment, even on Neovim `v0.12.x`. Neovim `v0.12` improves builtin treesitter support, but LazyVim and several enabled extras in this repo still depend on `nvim-treesitter`, `nvim-treesitter-textobjects`, and `nvim-ts-autotag`.
+
 ## Project Structure & Module Organization
 This repository is a personal Neovim configuration built on LazyVim. `init.lua` is the entrypoint and loads `lua/config/lazy.lua`, which bootstraps `lazy.nvim` and imports plugin specs.
 
@@ -25,4 +30,4 @@ There is no automated test suite in this repo. Validate changes by formatting wi
 Recent history uses Conventional Commit style, especially `feat:` prefixes, for example `feat: add golangci-lint and goimports/gofumpt for Go`. Follow that pattern with clear scopes when useful, such as `fix(go): disable conform for proto`. Pull requests should describe the user-facing editor change, list any new external dependencies, and include screenshots or short recordings when the change affects UI-heavy plugins.
 
 ## Configuration Notes
-Target Neovim `v0.10.x`, as documented in this repository. Avoid editing generated lock data casually, and call out any required system tools such as `npm`, `golangci-lint`, or language servers in the PR description.
+Target Neovim `v0.12.x` or newer in this repository. Avoid editing generated lock data casually, and call out any required system tools such as `npm`, `golangci-lint`, or language servers in the PR description.
